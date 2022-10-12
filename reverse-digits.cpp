@@ -1,21 +1,22 @@
+
 #include <bits/stdc++.h> 
 using namespace std; 
 
-int reversDigits(int n) 
+void reversDigits(int num) 
 { 
     int r = 0; 
     while(num > 0) 
     { 
-        r = rev_num*10 + num%10; 
+        r = num%10;
         num = num/10; 
-    } 
-    return r; 
+        cout<<r;
+    }  
 } 
 
 int main() 
 { 
     int num = 12345; 
-    cout << reversDigits(num); 
+    reversDigits(num); 
     
     return 0; 
 } 
